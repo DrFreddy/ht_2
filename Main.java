@@ -19,7 +19,13 @@ CalPostFix calculadora= new CalPostFix();
 System.out.println("¡Bienvenido a la calculadora POSTFIX");
 System.out.println("A continuación se cargará el archivo a analizar");
 
+
+try{
 calculadora.readFile("C:\\Users\\Ary lou\\Desktop\\P.txt");
+}
+catch (Exception e){
+	   System.err.println( "ARCHIVO NO ENCONTRADO" );
+}
 
 try {
 val=calculadora.calcular();
